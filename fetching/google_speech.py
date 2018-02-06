@@ -7,7 +7,6 @@ environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'google-cloud-creds.json'
 client = speech.SpeechClient()
 
 # InvalidArgument: 400 Request payload size exceeds the limit: 10485760 bytes.
-
 # tmp $ ffmpeg -i full-audio.wav -ss 00:00:02 -t 00:00:07 -ar 16000 -ac 1 audio.wav
 
 with open('audio.wav', 'rb') as sf:
